@@ -1,7 +1,7 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('pwa-tasks').then((cache) => {
-      return cache.addAll(['./', './HTML.html', './css.css', './js.js']);
+      return cache.addAll(['./', './index.html', './style.css', './script.js']);
     })
   );
 });
